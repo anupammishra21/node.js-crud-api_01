@@ -16,7 +16,7 @@ app.use("/api",apiRouter)
 
 require(path.join(__dirname,"./config/database"))()
 
-app.listen(process.env.PORT,()=>{
-    console.log(`server is running at @http://127.0.0.1:${process.env.PORT}`);
+app.listen(process.env.PORT, 'localhost' ,()=>{
+    console.log(`server is running at @http://localhost:${process.env.PORT}`);
 })
 
